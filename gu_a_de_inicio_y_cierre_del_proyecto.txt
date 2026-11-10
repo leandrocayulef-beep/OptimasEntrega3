@@ -1,0 +1,69 @@
+====================================================================
+ GUÍA DE USO DIARIO: INICIO, EJECUCIÓN Y CIERRE DEL PROYECTO (MINEDUC)
+====================================================================
+
+Ubicación del proyecto: /home/leandro/Desktop/Carreras
+Entorno virtual: venv
+
+--------------------------------------------------------------------
+PASO 1: ABRIR E INICIAR EL ENTORNO DE TRABAJO
+--------------------------------------------------------------------
+
+1. Abre tu terminal de Linux (Ctrl + Alt + T).
+
+2. Entra al directorio del proyecto:
+   cd /home/leandro/Desktop/Carreras
+
+3. Activa el entorno virtual:
+   source venv/bin/activate
+
+   (Sabrás que está activo porque aparecerá `(venv)` al inicio de tu consola).
+
+4. Abre VS Code en esa carpeta (si no lo tenías abierto):
+   code .
+
+
+--------------------------------------------------------------------
+PASO 2: CONECTAR EL KERNEL EN VS CODE
+--------------------------------------------------------------------
+
+1. Abre tu archivo de cuaderno (.ipynb) dentro de VS Code.
+
+2. Revisa la esquina superior derecha del cuaderno:
+   - Debe indicar: "Python (venv Carreras)" o "venv (Python 3.x)".
+
+3. Si no aparece seleccionado o pide instalar algo:
+   - Haz clic en "Select Kernel" (esquina superior derecha).
+   - Elige "Jupyter Kernel...".
+   - Selecciona "Python (venv Carreras)".
+
+
+--------------------------------------------------------------------
+PASO 3: EJECUTAR EL CÓDIGO
+--------------------------------------------------------------------
+
+- Puedes ejecutar cada celda secuencialmente con (Shift + Enter).
+- O puedes presionar "Run All" en la barra superior para ejecutar todo el pipeline.
+
+
+--------------------------------------------------------------------
+PASO 4: APAGAR Y CERRAR EL PROYECTO ADECUADAMENTE
+--------------------------------------------------------------------
+
+Cuando termine tu jornada de trabajo o desees apagar la máquina:
+
+1. Guardar cambios:
+   Presiona Ctrl + S en tu archivo de VS Code.
+
+2. Detener el Kernel de Jupyter:
+   - En la barra superior del cuaderno de VS Code, haz clic en el botón de detener (cuadrado rojo) o "Interrupt / Restart".
+
+3. Desactivar el entorno virtual en la terminal:
+   - Haz clic en la terminal de VS Code (o tu terminal externa) y escribe:
+     deactivate
+
+4. Cerrar VS Code y la terminal:
+   - Cierra la ventana de VS Code normalmente.
+   - Si la terminal sigue abierta, puedes escribir `exit` y presionar Enter.
+
+====================================================================
